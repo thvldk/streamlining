@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwindConfig.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Start Header -->
+    
+<section>
+    <div class="flex space-x-6 py-4 bg-gradient-to-r from-blue-500 to-orange-500">
+            <div class="w-1/3 pl-6">
+                <div class="flex">
+                    <img src="../multimedia/images/Bicol_University.png" class="h-20" alt="">
+                    <img src="../multimedia/images/bupc logo.png" class="h-20" alt="">
+                    <div class="mt-3 font-bold ml-2 text-xl">
+                        <label for="">Streamlining BU-Polangui Theses </label><br>
+                        <label class=""for="">and Capstone Management</label>
+                    </div>
+                    
+                </div>
+            
+            </div>
+            <div class="flex space-x-12 w-1/3 place-content-center font-bold mt-5 text-lg">
+                <div><button> <a href="http://localhost/streamlining/resources/html/logout.php">Home</a> </button></div>
+                <div><button> <a href="http://localhost/streamlining/resources/html/thesis.php">Thesis</a></button></div>
+                <div><button> <a href="http://localhost/streamlining/resources/html/news.php">Thesis Guide</a></button></div>
+            </div>
+
+            
+            <div class="flex space-x-6 w-1/3 place-content-end pr-12 mt-5">
+            <a href="http://localhost/streamlining/resources/html/history.html" class="button-link"><div>
+                    <i class="fa fa-clock-o fa-lg mt-3"></i></div>
+            </a>
+            <a href="http://localhost/streamlining/resources/html/bookmark.html" class="button-link"><div>
+                    <i class="fa fa-star fa-lg mt-3"></i></div>
+            </a>
+                <div><button class="bg-blue-500 rounded-full w-28 h-10 font-bold" onclick="logout()">Logout</button></div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- End Header -->
+    <section>
+        <div class=" bg-gray-500 mx-auto  py-10  ">
+            <div class="ml-60">
+            
+            </div>
+            <div>
+                
+            </div>
+               
+                <div class="w-full flex" >
+                    <div class="w-1/4 " dir="ltr"> </div>
+                    <div class="W-1/2" dir="ltr" >
+                        <select id="cars" class="py-7 rounded-s-full bg-blue-500">
+                            <option value="volvo" >Browse by Course</option>
+                            <option value="volvo" >IT</option>
+                            <option value="volvo" >BM</option>
+                          </select>
+                          
+                    </div>
+                    <input class="w-1/2 mx-auto  p-5" type="text " placeholder="Enter keywords "><div dir="rtl"> <button><i class="fa fa-search bg-blue-600 p-7 rounded-s-full"></i></button></div>
+                    <div class="w-1/4  "></div>
+                </div>
+                </div>
+               
+    </section>
+    <section class="bg-gray-200 relative  w-full flex h-140">
+        <div class="w-1/4">
+
+        </div>
+        <div class="w-3/4">
+            
+            <div class="w-full h-16 bg-white mt-10" >
+                <div class="py-5 mx-5 font-bold">
+                    <label for="">Bookmarked</label>
+                </div>
+                <div class="bg-gray-100 pt-2 w-1/4 font-bold flex space-x-4">
+                    <div class=" border-b-2 border-black pb-2">
+                        <label for="">SAVED RECORDS</label>
+                    </div>
+                    <div>
+                        <label for="">SEARCH HISTORY</label> 
+                    </div>         
+                     </div> 
+                     <div class="flex bg-white mt-2">
+                        <div class="border border-black h-5 w-5 my-2 ml-4">
+                            <label class="ml-1" for=""></label> 
+                            
+                        </div> 
+                        <div class="mt-1" > 
+                           <label class="ml-4" for="">1 Item</label>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="w-full h-90 mt-32  bg-white">
+                <div>
+                    <label class="ml-5" for="">1</label> 
+                    
+                </div>
+                <div class="ml-5 flex mb-2">
+                    <img class="w-20 h-20" src="../multimedia/images/book.png" alt="">
+                    <div>
+                        <label class="text-sm ml-6" for="">CAPSTONE PROJECT</label> <br>
+                        <label class="ml-6 font-bold text-blue-500" for="">Attendanstek: a mobile application monitoring system</label>
+                        <p class="ml-6 text-xs">BU-Polangui BSCS C11a 2019 <br>
+                           Cadenas, R M, Contado, J A, Teodoro, A.D. <br>
+                           Availability: On-self Online 
+    
+                        </p>
+                    </div>
+                   
+                </div>
+               
+                
+
+                
+               
+            </div>
+       
+        </div>
+        
+        <div class="w-1/4">
+            
+        </div>
+      
+        
+        
+    </section>
+</body>
+</html>

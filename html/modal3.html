@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Trigger/Open The Modal -->
+    <button class="mt-4 ml-6 font-bold bg-blue-500 w-26 text-center py-1" id="myBtn">+ Add New</button>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2 class="text-2xl py-2 self-start">Add New</h2>
+            </div>
+            <div class="modal-body flex">
+                <div class="container w-1/5">
+                    <img class="" src="../multimedia/images/book.png" alt="">
+                </div>
+                <div class="container w-4/5 mr-10">
+                    <label class="text-sm" for="">THESIS</label> <br>
+                    <label class="font-bold text-blue-500" for="">Attendanstek: a mobile application monitoring system</label>
+                    <span class="float-right">
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p class="text-xs">BU-Polangui BSCS C11a 2019 <br>
+                       Cadenas, R M, Contado, J A, Teodoro, A.D. <br>
+                       Availability: On-self Online 
+                    </p>
+                    <br>
+                    <span class="whitespace-nowrap">
+                        <label class="" for="">Details</label> 
+                       <hr class=" h-1 mx-auto my-4 bg-gray-100 border-0 rounded dark:bg-gray-700 ">
+                    </span>
+                    <div class="flex flex-col text-sm">
+                        <label for="">Title</label>
+                        <label for="">Author/s</label>
+                        <label for="">Course</label>
+                        <label for="">Year</label>
+                        <label for="">Content</label>
+                    </div>
+                    <br><hr class=" h-1 mx-auto my-4 bg-gray-100 border-0 rounded dark:bg-gray-700">
+
+                    <div class="flex">
+                        <div class="mx-auto">
+                            <iframe class="mb-4"
+                            src="https://icseindia.org/document/sample.pdf"
+                            width="400px"
+                            height="400px"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</html>
